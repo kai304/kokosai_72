@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hrI-Yc-9HY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--アクセスマップ-->
+        <scene sceneID="WO3-LL-dFO">
+            <objects>
+                <viewController id="gQ6-da-eKD" customClass="mapViewController" customModule="kokosai_72" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XgR-YY-Ml2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アクセスマップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FH-Wk-Dwd">
+                                <rect key="frame" x="146" y="438" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="pPW-GS-CsG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="アクセスマップ" id="kEh-rS-OdZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXq-66-OvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="439"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rwF-oP-I64">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hrI-Yc-9HY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fpf-Er-754">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0H9-ZS-FHr" kind="relationship" relationship="rootViewController" id="qfD-Bi-aKK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfT-80-w5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.57971014492756" y="118.52678571428571"/>
+        </scene>
+        <!--校内マップ-->
+        <scene sceneID="80a-VO-n1R">
+            <objects>
+                <viewController id="0H9-ZS-FHr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4dw-5Q-Y87">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="O2z-Ku-1bf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IH7-mF-dh9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="342.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="校内マップ"/>
+                                        <connections>
+                                            <segue destination="uY7-KZ-jqK" kind="show" id="Wuv-HX-w9i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzM-jO-e5G">
+                                        <rect key="frame" x="0.0" y="382.5" width="414" height="342.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="アクセスマップ"/>
+                                        <connections>
+                                            <segue destination="gQ6-da-eKD" kind="show" id="ALE-ZE-yD2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O2z-Ku-1bf" firstAttribute="leading" secondItem="p7I-T1-L5y" secondAttribute="leading" id="GGA-NE-xGR"/>
+                            <constraint firstItem="p7I-T1-L5y" firstAttribute="trailing" secondItem="O2z-Ku-1bf" secondAttribute="trailing" id="eLp-Rq-bsE"/>
+                            <constraint firstItem="p7I-T1-L5y" firstAttribute="bottom" secondItem="O2z-Ku-1bf" secondAttribute="bottom" id="g7P-7P-iTM"/>
+                            <constraint firstItem="O2z-Ku-1bf" firstAttribute="top" secondItem="p7I-T1-L5y" secondAttribute="top" id="j8J-NV-BCD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p7I-T1-L5y"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="マップ" image="map" catalog="system" id="sI9-kr-aDI"/>
+                    <navigationItem key="navigationItem" title="校内マップ" id="sKa-FW-2eZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3nC-jm-r8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="119"/>
+        </scene>
+        <!--校内マップ-->
+        <scene sceneID="P6A-hX-Ira">
+            <objects>
+                <viewController id="uY7-KZ-jqK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xmB-qm-F5u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="uyW-0G-Ecj">
+                                <rect key="frame" x="333" y="453" width="51" height="330"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cn-zb-zok">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="1F"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwk-Nl-MK9">
+                                        <rect key="frame" x="0.0" y="72" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="2F"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLI-2t-56g">
+                                        <rect key="frame" x="0.0" y="144" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="3F"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcY-HH-Wfd">
+                                        <rect key="frame" x="0.0" y="216" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="4F"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nv8-hO-4YZ">
+                                        <rect key="frame" x="0.0" y="288" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="全体"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-ED-HbW">
+                                <rect key="frame" x="146" y="324" width="151" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="校舎_2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cim-fZ-4J5" firstAttribute="bottom" secondItem="uyW-0G-Ecj" secondAttribute="bottom" constant="30" id="1cQ-Rr-SFY"/>
+                            <constraint firstItem="Cim-fZ-4J5" firstAttribute="trailing" secondItem="uyW-0G-Ecj" secondAttribute="trailing" constant="30" id="r4E-rv-HE1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cim-fZ-4J5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="校内マップ" id="BaS-x2-W5n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6z-Nn-5Qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105.7971014492755" y="-487.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" catalog="system" width="64" height="56"/>
+        <image name="校舎_2" width="3152" height="7692"/>
+    </resources>
+</document>

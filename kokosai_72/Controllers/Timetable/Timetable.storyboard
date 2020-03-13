@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hqD-m7-dfO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--タイムテーブル-->
+        <scene sceneID="wCm-Wc-Wmk">
+            <objects>
+                <viewController id="cfn-4o-bjS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2JL-l0-yl1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="h2T-od-cLk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="タイムテーブル" image="clock" catalog="system" id="iia-7J-EyJ"/>
+                    <navigationItem key="navigationItem" title="タイムテーブル" id="I88-6d-7U7"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IL9-T5-6Dh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515.9420289855075" y="-190.17857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="179-ug-mUx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hqD-m7-dfO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0LB-CD-tT6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cfn-4o-bjS" kind="relationship" relationship="rootViewController" id="S1U-Tj-MtG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtj-Uu-Uqa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605.79710144927537" y="-190.17857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

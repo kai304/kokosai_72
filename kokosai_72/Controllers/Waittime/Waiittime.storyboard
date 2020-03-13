@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dBi-ZO-r2c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--待ち時間-->
+        <scene sceneID="J0p-Jy-4A1">
+            <objects>
+                <viewController id="OSP-si-kp5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ls-UU-Oyz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="T5b-V1-zwg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="待ち時間" image="stopwatch" catalog="system" id="F1w-Th-aDU"/>
+                    <navigationItem key="navigationItem" title="待ち時間" id="9Zb-Ot-olr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoH-fX-v6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126.0869565217392" y="-187.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wiF-Ce-yvf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dBi-ZO-r2c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="icL-mG-2YS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OSP-si-kp5" kind="relationship" relationship="rootViewController" id="d4Y-BO-tUL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7f2-l2-L9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.94202898550725" y="-187.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stopwatch" catalog="system" width="60" height="64"/>
+    </resources>
+</document>

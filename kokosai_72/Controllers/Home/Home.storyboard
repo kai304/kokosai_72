@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4go-DP-GCg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="npX-hN-q7d">
+            <objects>
+                <viewController id="4go-DP-GCg" customClass="ViewController" customModule="kokosai_72" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ABI-Hy-ycA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52H-kJ-XXM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="OdB-Qf-70B" kind="show" id="IP0-b4-7TN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4J-OE-0RR">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="U4J-OE-0RR" firstAttribute="trailing" secondItem="6t1-SE-2ma" secondAttribute="trailing" id="2z1-x8-jhs"/>
+                            <constraint firstItem="U4J-OE-0RR" firstAttribute="bottom" secondItem="6t1-SE-2ma" secondAttribute="bottom" id="G2n-Mv-lJ7"/>
+                            <constraint firstItem="U4J-OE-0RR" firstAttribute="leading" secondItem="6t1-SE-2ma" secondAttribute="leading" id="MZj-tI-8Hb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6t1-SE-2ma"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4P-cD-6Tj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3229" y="457"/>
+        </scene>
+        <!--ホーム-->
+        <scene sceneID="Jaq-Bo-Qwc">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="mgK-HO-oMk" customClass="HomeViewController" customModule="kokosai_72" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ola-Lv-OLH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-Iq-G31">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-IQ-JTY">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="703"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1C-Vv-9bK">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="234.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="HR"/>
+                                                <connections>
+                                                    <segue destination="qx2-RY-Cxf" kind="show" id="DO5-dk-Svc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfS-nQ-Wdr">
+                                                <rect key="frame" x="0.0" y="234.5" width="207" height="234"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="学校紹介"/>
+                                                <connections>
+                                                    <segue destination="o8e-NN-339" kind="show" id="qKf-sP-fKp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9s-bZ-nf8">
+                                                <rect key="frame" x="0.0" y="468.5" width="207" height="234.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="アンケート"/>
+                                                <connections>
+                                                    <action selector="Questionnaire:" destination="mgK-HO-oMk" eventType="touchUpInside" id="joP-cq-7X0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-NT-zgW">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="703"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3k-N1-j2z">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="234.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="有志団体"/>
+                                                <connections>
+                                                    <segue destination="Moz-kV-KcL" kind="show" id="MMy-Yz-5cS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbk-Xx-YCt">
+                                                <rect key="frame" x="0.0" y="234.5" width="207" height="234"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="広告"/>
+                                                <connections>
+                                                    <action selector="Advertisement:" destination="mgK-HO-oMk" eventType="touchUpInside" id="EII-5P-9e9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwI-sh-JcC">
+                                                <rect key="frame" x="0.0" y="468.5" width="207" height="234.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="その他"/>
+                                                <connections>
+                                                    <segue destination="N2d-RG-Pu7" kind="show" id="mkE-mm-2Mj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mgd-IQ-JTY" firstAttribute="top" secondItem="sfg-Iq-G31" secondAttribute="top" id="BtN-Ne-1Ui"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fhd-NT-zgW" secondAttribute="bottom" id="HQX-OM-rzr"/>
+                                    <constraint firstItem="Fhd-NT-zgW" firstAttribute="top" secondItem="sfg-Iq-G31" secondAttribute="top" id="K8d-XJ-6Ab"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mgd-IQ-JTY" secondAttribute="bottom" id="orA-42-EFa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sfg-Iq-G31" firstAttribute="top" secondItem="lG6-UN-5EF" secondAttribute="top" id="5iR-0F-1k6"/>
+                            <constraint firstItem="sfg-Iq-G31" firstAttribute="trailing" secondItem="lG6-UN-5EF" secondAttribute="trailing" id="h2U-cG-roB"/>
+                            <constraint firstItem="sfg-Iq-G31" firstAttribute="leading" secondItem="lG6-UN-5EF" secondAttribute="leading" id="iQ2-E6-DDx"/>
+                            <constraint firstItem="sfg-Iq-G31" firstAttribute="bottom" secondItem="lG6-UN-5EF" secondAttribute="bottom" id="ioC-XM-LCm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lG6-UN-5EF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ホーム" id="9jw-cF-LLf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkW-Sz-Tfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6005.7971014492759" y="111.83035714285714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ISR-1f-Qga">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="OdB-Qf-70B" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pRJ-Wb-EgH"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b88-I1-A7d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HC4-dp-iFj" kind="relationship" relationship="viewControllers" id="VuF-Fw-e5r"/>
+                        <segue destination="keE-Uu-eYg" kind="relationship" relationship="viewControllers" id="qby-89-vhn"/>
+                        <segue destination="3an-VE-p5C" kind="relationship" relationship="viewControllers" id="U8n-uj-LbK"/>
+                        <segue destination="OOT-in-Ydu" kind="relationship" relationship="viewControllers" id="NdD-HQ-X9s"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZY-zZ-gpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4238" y="457"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="1ND-Qi-6l3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="keE-Uu-eYg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="マップ" image="map" catalog="system" selectedImage="map" id="6bJ-Dv-fJU" userLabel="マップ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEa-gX-dPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5012" y="492"/>
+        </scene>
+        <!--Timetable-->
+        <scene sceneID="wTT-Ek-ERP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Timetable" id="3an-VE-p5C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="タイムテーブル" image="clock" catalog="system" selectedImage="clock" id="n4a-O5-O9x"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0I-Pp-3Sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5026" y="615"/>
+        </scene>
+        <!--Waiittime-->
+        <scene sceneID="g8J-3A-nIh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Waiittime" id="OOT-in-Ydu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="待ち時間" image="stopwatch" catalog="system" selectedImage="stopwatch" id="daG-jl-Ywb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQT-mX-VhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5031" y="727"/>
+        </scene>
+        <!--HR-->
+        <scene sceneID="uPn-4h-m1t">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="HR" id="qx2-RY-Cxf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ccE-1O-3ro"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9G-1g-LTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6645" y="-26"/>
+        </scene>
+        <!--Volunteer-->
+        <scene sceneID="Sew-6d-CgH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Volunteer" id="Moz-kV-KcL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jQu-ZX-XR3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sb-q5-9P5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6646" y="29"/>
+        </scene>
+        <!--Other-->
+        <scene sceneID="xnG-Or-mDH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Other" id="N2d-RG-Pu7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jIe-nc-KEZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9j-kD-CFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6646" y="258"/>
+        </scene>
+        <!--Introduction-->
+        <scene sceneID="wpr-ep-siz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Introduction" id="o8e-NN-339" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aqQ-qB-b9g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxY-5p-44P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6646" y="82"/>
+        </scene>
+        <!--ホーム-->
+        <scene sceneID="tQs-8u-jBg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="HC4-dp-iFj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house" catalog="system" id="Ap6-WB-Ba5">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textFontSize">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sxd-VK-TIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mgK-HO-oMk" kind="relationship" relationship="rootViewController" id="bN1-1r-Ked"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUr-UI-Suz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5095.652173913044" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock" catalog="system" width="64" height="60"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="map" catalog="system" width="64" height="56"/>
+        <image name="stopwatch" catalog="system" width="60" height="64"/>
+    </resources>
+</document>

@@ -13,7 +13,8 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var searchBarField: UISearchBar!
     @IBOutlet weak var tableField: UITableView!
     @IBOutlet weak var segmentedswitch: UISegmentedControl!
-    var selectedImage: UIImage?
+    var Appdelegate_conect = UIApplication.shared.delegate as! AppDelegate
+
     let nodate : String = ""
     /// 画像のファイル名
     var HR1_imageNames = [
@@ -280,8 +281,12 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        selectedImage = UIImage(named: displayimageNames[indexPath.row] )
-        switch selectedImage {
+        
+        
+        Appdelegate_conect.selectedImage = UIImage(named: displayimageNames[indexPath.row] )
+        self.performSegue(withIdentifier: "toHRinfo", sender: nil)
+        /*
+        switch Appdelegate_conect.selectedImage {
         case UIImage(named: "101"):
             print("101")
             self.performSegue(withIdentifier: "to101", sender: nil)
@@ -366,6 +371,7 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         default:
             break
         }
+ */
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

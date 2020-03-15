@@ -14,6 +14,7 @@
 		343DD987241607F500914617 /* HR_image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343DD986241607F500914617 /* HR_image.xcassets */; };
 		34598013241B9E0C007D8F96 /* Map.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34598012241B9E0C007D8F96 /* Map.xcassets */; };
 		345B7E92241761C800146D6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B7E91241761C800146D6D /* HomeViewController.swift */; };
+		3492EDC0241E25B60083570A /* HR_info_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3492EDBF241E25B60083570A /* HR_info_ViewController.swift */; };
 		3495FF20241635E100FD6F76 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3495FF1F241635E100FD6F76 /* Questionnaire.storyboard */; };
 		3495FF232416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3495FF222416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift */; };
 		3495FF25241642C200FD6F76 /* VolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3495FF24241642C200FD6F76 /* VolunteerViewController.swift */; };
@@ -42,6 +43,7 @@
 		343DD986241607F500914617 /* HR_image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HR_image.xcassets; sourceTree = "<group>"; };
 		34598012241B9E0C007D8F96 /* Map.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Map.xcassets; sourceTree = "<group>"; };
 		345B7E91241761C800146D6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3492EDBF241E25B60083570A /* HR_info_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HR_info_ViewController.swift; path = kokosai_72/Controllers/HR/HR_info_ViewController.swift; sourceTree = SOURCE_ROOT; };
 		3495FF1F241635E100FD6F76 /* Questionnaire.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questionnaire.storyboard; sourceTree = "<group>"; };
 		3495FF222416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Custom_Volunteer_TableViewCell.swift; path = kokosai_72/Controllers/Volunteer/Custom_Volunteer_TableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		3495FF24241642C200FD6F76 /* VolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				34F59E452415D3E9006C0B3B /* Other.storyboard */,
+				3492EDBF241E25B60083570A /* HR_info_ViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3492EDC0241E25B60083570A /* HR_info_ViewController.swift in Sources */,
 				34C124102414B86700216F2F /* AppDelegate.swift in Sources */,
 				3495FF25241642C200FD6F76 /* VolunteerViewController.swift in Sources */,
 				3495FF232416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift in Sources */,

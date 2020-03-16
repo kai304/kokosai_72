@@ -13,10 +13,7 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var searchBarField: UISearchBar!
     @IBOutlet weak var tableField: UITableView!
     @IBOutlet weak var segmentedswitch: UISegmentedControl!
-    
-    
     var Appdelegate_conect = UIApplication.shared.delegate as! AppDelegate
-
     let nodate : String = ""
     /// 画像のファイル名
     var HR1_imageNames = [
@@ -283,97 +280,8 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        
         Appdelegate_conect.selectedImage = UIImage(named: displayimageNames[indexPath.row] )
         self.performSegue(withIdentifier: "toHRinfo", sender: nil)
-        /*
-        switch Appdelegate_conect.selectedImage {
-        case UIImage(named: "101"):
-            print("101")
-            self.performSegue(withIdentifier: "to101", sender: nil)
-        case UIImage(named: "102"):
-            print("102")
-            self.performSegue(withIdentifier: "to102", sender: nil)
-        case UIImage(named: "103"):
-            print("103")
-            self.performSegue(withIdentifier: "to103", sender: nil)
-        case UIImage(named: "104"):
-            print("104")
-            self.performSegue(withIdentifier: "to104", sender: nil)
-        case UIImage(named: "105"):
-            print("105")
-            self.performSegue(withIdentifier: "to105", sender: nil)
-        case UIImage(named: "106"):
-            print("106")
-            self.performSegue(withIdentifier: "to106", sender: nil)
-        case UIImage(named: "107"):
-            print("107")
-            self.performSegue(withIdentifier: "to107", sender: nil)
-        case UIImage(named: "108"):
-            print("108")
-            self.performSegue(withIdentifier: "to108", sender: nil)
-        case UIImage(named: "109"):
-            print("109")
-            self.performSegue(withIdentifier: "to109", sender: nil)
-        case UIImage(named: "201"):
-            print("201")
-            self.performSegue(withIdentifier: "to201", sender: nil)
-        case UIImage(named: "202"):
-            print("202")
-            self.performSegue(withIdentifier: "to202", sender: nil)
-        case UIImage(named: "203"):
-            print("203")
-            self.performSegue(withIdentifier: "to203", sender: nil)
-        case UIImage(named: "204"):
-            print("204")
-            self.performSegue(withIdentifier: "to204", sender: nil)
-        case UIImage(named: "205"):
-            print("205")
-            self.performSegue(withIdentifier: "to205", sender: nil)
-        case UIImage(named: "206"):
-            print("206")
-            self.performSegue(withIdentifier: "to206", sender: nil)
-        case UIImage(named: "207"):
-            print("207")
-            self.performSegue(withIdentifier: "to207", sender: nil)
-        case UIImage(named: "208"):
-            print("208")
-            self.performSegue(withIdentifier: "to208", sender: nil)
-        case UIImage(named: "209"):
-            print("209")
-            self.performSegue(withIdentifier: "to209", sender: nil)
-        case UIImage(named: "301"):
-            print("301")
-            self.performSegue(withIdentifier: "to301", sender: nil)
-        case UIImage(named: "302"):
-            print("302")
-            self.performSegue(withIdentifier: "to302", sender: nil)
-        case UIImage(named: "303"):
-            print("303")
-            self.performSegue(withIdentifier: "to303", sender: nil)
-        case UIImage(named: "304"):
-            print("304")
-            self.performSegue(withIdentifier: "to304", sender: nil)
-        case UIImage(named: "305"):
-            print("305")
-            self.performSegue(withIdentifier: "to305", sender: nil)
-        case UIImage(named: "306"):
-            print("306")
-            self.performSegue(withIdentifier: "to306", sender: nil)
-        case UIImage(named: "307"):
-            print("307")
-            self.performSegue(withIdentifier: "to307", sender: nil)
-        case UIImage(named: "308"):
-            print("308")
-            self.performSegue(withIdentifier: "to308", sender: nil)
-        case UIImage(named: "309"):
-            print("309")
-            self.performSegue(withIdentifier: "to309", sender: nil)
-        default:
-            break
-        }
- */
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -470,7 +378,7 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
             break
         }
     }
-    //MARK:- Swipe
+
  
     
 }

@@ -85,9 +85,6 @@ class HR_info_ViewController: UIViewController {
             break
         }
     }
-    //MARK: - Functions
-    private func _101(){
-        
-    }
+
 
 }

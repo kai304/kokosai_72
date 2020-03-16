@@ -13,7 +13,7 @@ class VolunteerViewController: UIViewController, UITableViewDelegate, UITableVie
     //MARK: - Variables
     @IBOutlet weak var searchBarField: UISearchBar!
     @IBOutlet weak var tableField: UITableView!
-    var selectedImage: UIImage?
+    var Appdelegate_conect = UIApplication.shared.delegate as! AppDelegate
     let nodate : String = ""
     /// 画像のファイル名
     var imageNames = [
@@ -113,6 +113,8 @@ class VolunteerViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        Appdelegate_conect.selectedImage = UIImage(named: displayimageNames[indexPath.row] )
+        self.performSegue(withIdentifier: "toVolunteer", sender: nil)
    
     }
     //MARK: -SearchBar

@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="135" y="80"/>
         </scene>
-        <!--Rinfo set View Controller-->
+        <!--View Controller-->
         <scene sceneID="pi0-T3-2GG">
             <objects>
-                <viewController id="H6D-nG-uhC" customClass="HRinfo_set_ViewController" customModule="kokosai_72" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H6D-nG-uhC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dIJ-CU-sed">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

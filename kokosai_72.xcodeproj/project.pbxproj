@@ -33,7 +33,7 @@
 		34F59E482415D3FE006C0B3B /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E472415D3FE006C0B3B /* Map.storyboard */; };
 		34F59E4A2415D409006C0B3B /* Timetable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E492415D409006C0B3B /* Timetable.storyboard */; };
 		34F59E4C2415D41A006C0B3B /* Waiittime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E4B2415D41A006C0B3B /* Waiittime.storyboard */; };
-		34F93794241FA15E00A8E526 /* HRinfo_set_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F93793241FA15E00A8E526 /* HRinfo_set_ViewController.swift */; };
+		34F93796241FAB3B00A8E526 /* Volunteer_info_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F93795241FAB3B00A8E526 /* Volunteer_info_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,7 @@
 		34F59E472415D3FE006C0B3B /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		34F59E492415D409006C0B3B /* Timetable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timetable.storyboard; sourceTree = "<group>"; };
 		34F59E4B2415D41A006C0B3B /* Waiittime.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Waiittime.storyboard; sourceTree = "<group>"; };
-		34F93793241FA15E00A8E526 /* HRinfo_set_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRinfo_set_ViewController.swift; sourceTree = "<group>"; };
+		34F93795241FAB3B00A8E526 /* Volunteer_info_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer_info_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				34F59E3D2415D379006C0B3B /* HR.storyboard */,
-				34F93793241FA15E00A8E526 /* HRinfo_set_ViewController.swift */,
 				343DD9822416061200914617 /* HRViewController.swift */,
 				343DD984241606D300914617 /* Custom_HR_TableViewCell.swift */,
 				3492EDBF241E25B60083570A /* HR_info_ViewController.swift */,
@@ -170,6 +169,7 @@
 			children = (
 				34F59E3F2415D390006C0B3B /* Volunteer.storyboard */,
 				3495FF24241642C200FD6F76 /* VolunteerViewController.swift */,
+				34F93795241FAB3B00A8E526 /* Volunteer_info_ViewController.swift */,
 				3495FF222416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift */,
 				3495FF262416582300FD6F76 /* Volunteer.xcassets */,
 			);
@@ -325,10 +325,10 @@
 				343DD9832416061200914617 /* HRViewController.swift in Sources */,
 				3425891A2419117F00E21A4F /* konaimapViewController.swift in Sources */,
 				343DD985241606D300914617 /* Custom_HR_TableViewCell.swift in Sources */,
-				34F93794241FA15E00A8E526 /* HRinfo_set_ViewController.swift in Sources */,
 				345B7E92241761C800146D6D /* HomeViewController.swift in Sources */,
 				34C124122414B86700216F2F /* SceneDelegate.swift in Sources */,
 				3411D4EF2418892600E69903 /* mapViewController.swift in Sources */,
+				34F93796241FAB3B00A8E526 /* Volunteer_info_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,23 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pbJ-wd-eA9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <segmentedControl key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="NxF-0Z-c7v">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <segments>
-                                        <segment title="１年"/>
-                                        <segment title="２年"/>
-                                        <segment title="３年"/>
-                                    </segments>
-                                    <connections>
-                                        <action selector="segmentswitchtapped:" destination="6w2-tC-0MZ" eventType="valueChanged" id="A9J-FP-2W8"/>
-                                    </connections>
-                                </segmentedControl>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="MyCell" id="x0e-qC-egN" customClass="Custom_HR_TableViewCell" customModule="kokosai_72" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="60" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0e-qC-egN" id="HEJ-AP-z0i">
                                             <rect key="frame" x="0.0" y="0.0" width="351" height="140"/>
@@ -90,10 +78,23 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="NxF-0Z-c7v">
+                                <rect key="frame" x="0.0" y="100" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="１年"/>
+                                    <segment title="２年"/>
+                                    <segment title="３年"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentswitchtapped:" destination="6w2-tC-0MZ" eventType="valueChanged" id="A9J-FP-2W8"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="pbJ-wd-eA9" firstAttribute="top" secondItem="0U3-9x-HT9" secondAttribute="top" id="1a8-EZ-hyy"/>
+                            <constraint firstItem="pbJ-wd-eA9" firstAttribute="top" secondItem="NxF-0Z-c7v" secondAttribute="bottom" constant="8" id="4JZ-jQ-QeQ"/>
                             <constraint firstItem="pbJ-wd-eA9" firstAttribute="leading" secondItem="0U3-9x-HT9" secondAttribute="leading" id="AtZ-2s-djr"/>
                             <constraint firstItem="pbJ-wd-eA9" firstAttribute="trailing" secondItem="0U3-9x-HT9" secondAttribute="trailing" id="R8i-Yp-1S9"/>
                             <constraint firstItem="0U3-9x-HT9" firstAttribute="bottom" secondItem="pbJ-wd-eA9" secondAttribute="bottom" id="Y9a-uG-Cyb"/>
@@ -110,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyf-Qs-ZwR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="80"/>
+            <point key="canvasLocation" x="948" y="80"/>
         </scene>
         <!--HRName-->
         <scene sceneID="4Rh-3a-iyA">
@@ -126,11 +127,38 @@
                                     <constraint firstAttribute="width" secondItem="dLC-4x-2ER" secondAttribute="height" multiplier="809:500" id="Ovr-X7-Ejl"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyV-To-giZ">
+                                <rect key="frame" x="20" y="352" width="374" height="510"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVM-Hc-PZ4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="800"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" id="KC9-Hd-iw4"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="H6D-nG-uhC" kind="embed" id="HWY-8p-w3A"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yVM-Hc-PZ4" firstAttribute="top" secondItem="eyV-To-giZ" secondAttribute="top" id="Bzh-ey-pka"/>
+                                    <constraint firstAttribute="trailing" secondItem="yVM-Hc-PZ4" secondAttribute="trailing" id="CRS-g0-Tbo"/>
+                                    <constraint firstItem="yVM-Hc-PZ4" firstAttribute="centerX" secondItem="eyV-To-giZ" secondAttribute="centerX" id="Kfd-kA-VHg"/>
+                                    <constraint firstAttribute="bottom" secondItem="yVM-Hc-PZ4" secondAttribute="bottom" id="Mmw-kN-eOM"/>
+                                    <constraint firstItem="yVM-Hc-PZ4" firstAttribute="leading" secondItem="eyV-To-giZ" secondAttribute="leading" id="phx-QF-uxU"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="U27-53-k04"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ACa-OM-soQ"/>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="eyV-To-giZ" firstAttribute="leading" secondItem="OOd-uO-jDu" secondAttribute="leading" constant="20" id="2zA-Eh-4YH"/>
+                            <constraint firstItem="eyV-To-giZ" firstAttribute="bottom" secondItem="OOd-uO-jDu" secondAttribute="bottom" id="5TH-c5-8QU"/>
                             <constraint firstItem="dLC-4x-2ER" firstAttribute="trailing" secondItem="OOd-uO-jDu" secondAttribute="trailing" id="Idg-My-RPh"/>
                             <constraint firstItem="dLC-4x-2ER" firstAttribute="leading" secondItem="OOd-uO-jDu" secondAttribute="leading" id="L90-Ic-Hnw"/>
+                            <constraint firstItem="eyV-To-giZ" firstAttribute="top" secondItem="dLC-4x-2ER" secondAttribute="bottom" constant="8" id="c8d-HP-faH"/>
+                            <constraint firstItem="OOd-uO-jDu" firstAttribute="trailing" secondItem="eyV-To-giZ" secondAttribute="trailing" constant="20" id="dfC-gG-e0y"/>
                             <constraint firstItem="dLC-4x-2ER" firstAttribute="top" secondItem="OOd-uO-jDu" secondAttribute="top" id="z1n-Hn-mKr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OOd-uO-jDu"/>
@@ -161,7 +189,38 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jh-xw-jYt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="80"/>
+            <point key="canvasLocation" x="135" y="80"/>
+        </scene>
+        <!--Rinfo set View Controller-->
+        <scene sceneID="pi0-T3-2GG">
+            <objects>
+                <viewController id="H6D-nG-uhC" customClass="HRinfo_set_ViewController" customModule="kokosai_72" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dIJ-CU-sed">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jB-Z8-8pP">
+                                <rect key="frame" x="16" y="29" width="358" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">美術科にデザインしてもらう
+内容
+・地図
+・クラスの説明
+・PR動画入れるなら動画再生画面
+・SNSアカウントへのリンク（入れたいなら）
+・待ち時間または混雑状況</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uvr-JF-FbK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgh-R6-pQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2579.7101449275365" y="112.5"/>
         </scene>
     </scenes>
 </document>

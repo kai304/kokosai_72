@@ -13,6 +13,8 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var searchBarField: UISearchBar!
     @IBOutlet weak var tableField: UITableView!
     @IBOutlet weak var segmentedswitch: UISegmentedControl!
+    
+    
     var Appdelegate_conect = UIApplication.shared.delegate as! AppDelegate
 
     let nodate : String = ""
@@ -391,6 +393,7 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
                 displayimageDescriptions.append(imageDescriptions[index])
             }
             index += 1
+            
         }
         print(displayimageTitles)
         print(displayimageNames)
@@ -467,5 +470,7 @@ class HRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
             break
         }
     }
-
+    //MARK:- Swipe
+ 
+    
 }

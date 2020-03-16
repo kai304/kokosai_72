@@ -13,9 +13,11 @@ class HR_info_ViewController: UIViewController {
     //MARK: - Variables
     @IBOutlet weak var HR_Name: UINavigationItem!
     @IBOutlet weak var HR_Image: UIImageView!
+
     // MARK: - view
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -83,6 +85,9 @@ class HR_info_ViewController: UIViewController {
             break
         }
     }
-
+    //MARK: - Functions
+    private func _101(){
+        
+    }
 
 }

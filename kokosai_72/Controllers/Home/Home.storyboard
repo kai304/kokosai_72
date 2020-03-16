@@ -22,7 +22,7 @@
                                     <segue destination="OdB-Qf-70B" kind="show" id="IP0-b4-7TN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4J-OE-0RR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4J-OE-0RR">
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
@@ -194,7 +194,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9G-1g-LTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6645" y="-26"/>
+            <point key="canvasLocation" x="6603" y="63"/>
         </scene>
         <!--Volunteer-->
         <scene sceneID="Sew-6d-CgH">
@@ -204,7 +204,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sb-q5-9P5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6646" y="29"/>
+            <point key="canvasLocation" x="6604" y="95"/>
         </scene>
         <!--Other-->
         <scene sceneID="xnG-Or-mDH">
@@ -214,7 +214,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9j-kD-CFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6646" y="258"/>
+            <point key="canvasLocation" x="6604" y="165"/>
         </scene>
         <!--Introduction-->
         <scene sceneID="wpr-ep-siz">
@@ -224,7 +224,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxY-5p-44P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6646" y="82"/>
+            <point key="canvasLocation" x="6604" y="129"/>
         </scene>
         <!--ホーム-->
         <scene sceneID="tQs-8u-jBg">

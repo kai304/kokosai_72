@@ -15,7 +15,6 @@
 		34598013241B9E0C007D8F96 /* Map.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34598012241B9E0C007D8F96 /* Map.xcassets */; };
 		345B7E92241761C800146D6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B7E91241761C800146D6D /* HomeViewController.swift */; };
 		3492EDC0241E25B60083570A /* HR_info_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3492EDBF241E25B60083570A /* HR_info_ViewController.swift */; };
-		3495FF20241635E100FD6F76 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3495FF1F241635E100FD6F76 /* Questionnaire.storyboard */; };
 		3495FF232416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3495FF222416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift */; };
 		3495FF25241642C200FD6F76 /* VolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3495FF24241642C200FD6F76 /* VolunteerViewController.swift */; };
 		3495FF272416582300FD6F76 /* Volunteer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3495FF262416582300FD6F76 /* Volunteer.xcassets */; };
@@ -28,7 +27,6 @@
 		34F59E3E2415D379006C0B3B /* HR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E3D2415D379006C0B3B /* HR.storyboard */; };
 		34F59E402415D390006C0B3B /* Volunteer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E3F2415D390006C0B3B /* Volunteer.storyboard */; };
 		34F59E422415D3A1006C0B3B /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E412415D3A1006C0B3B /* Introduction.storyboard */; };
-		34F59E442415D3B0006C0B3B /* Advertisement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E432415D3B0006C0B3B /* Advertisement.storyboard */; };
 		34F59E462415D3E9006C0B3B /* Other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E452415D3E9006C0B3B /* Other.storyboard */; };
 		34F59E482415D3FE006C0B3B /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E472415D3FE006C0B3B /* Map.storyboard */; };
 		34F59E4A2415D409006C0B3B /* Timetable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E492415D409006C0B3B /* Timetable.storyboard */; };
@@ -45,7 +43,6 @@
 		34598012241B9E0C007D8F96 /* Map.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Map.xcassets; sourceTree = "<group>"; };
 		345B7E91241761C800146D6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3492EDBF241E25B60083570A /* HR_info_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HR_info_ViewController.swift; path = kokosai_72/Controllers/HR/HR_info_ViewController.swift; sourceTree = SOURCE_ROOT; };
-		3495FF1F241635E100FD6F76 /* Questionnaire.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questionnaire.storyboard; sourceTree = "<group>"; };
 		3495FF222416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Custom_Volunteer_TableViewCell.swift; path = kokosai_72/Controllers/Volunteer/Custom_Volunteer_TableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		3495FF24241642C200FD6F76 /* VolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerViewController.swift; sourceTree = "<group>"; };
 		3495FF262416582300FD6F76 /* Volunteer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Volunteer.xcassets; sourceTree = "<group>"; };
@@ -60,7 +57,6 @@
 		34F59E3D2415D379006C0B3B /* HR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HR.storyboard; sourceTree = "<group>"; };
 		34F59E3F2415D390006C0B3B /* Volunteer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Volunteer.storyboard; sourceTree = "<group>"; };
 		34F59E412415D3A1006C0B3B /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
-		34F59E432415D3B0006C0B3B /* Advertisement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Advertisement.storyboard; sourceTree = "<group>"; };
 		34F59E452415D3E9006C0B3B /* Other.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Other.storyboard; sourceTree = "<group>"; };
 		34F59E472415D3FE006C0B3B /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		34F59E492415D409006C0B3B /* Timetable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timetable.storyboard; sourceTree = "<group>"; };
@@ -80,14 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3495FF21241635E600FD6F76 /* Questionnaire */ = {
-			isa = PBXGroup;
-			children = (
-				3495FF1F241635E100FD6F76 /* Questionnaire.storyboard */,
-			);
-			path = Questionnaire;
-			sourceTree = "<group>";
-		};
 		34C124032414B86700216F2F = {
 			isa = PBXGroup;
 			children = (
@@ -132,8 +120,6 @@
 				34F59E352415D1DD006C0B3B /* HR */,
 				34F59E362415D221006C0B3B /* Volunteer */,
 				34F59E3C2415D2FF006C0B3B /* Introduction */,
-				34F59E3A2415D25A006C0B3B /* Advertisement */,
-				3495FF21241635E600FD6F76 /* Questionnaire */,
 				34F59E3B2415D280006C0B3B /* Other */,
 				34F59E372415D232006C0B3B /* Map */,
 				34F59E382415D243006C0B3B /* Timetable */,
@@ -201,14 +187,6 @@
 				34F59E4B2415D41A006C0B3B /* Waiittime.storyboard */,
 			);
 			path = Waittime;
-			sourceTree = "<group>";
-		};
-		34F59E3A2415D25A006C0B3B /* Advertisement */ = {
-			isa = PBXGroup;
-			children = (
-				34F59E432415D3B0006C0B3B /* Advertisement.storyboard */,
-			);
-			path = Advertisement;
 			sourceTree = "<group>";
 		};
 		34F59E3B2415D280006C0B3B /* Other */ = {
@@ -303,8 +281,6 @@
 				34F59E402415D390006C0B3B /* Volunteer.storyboard in Resources */,
 				34F59E3E2415D379006C0B3B /* HR.storyboard in Resources */,
 				34F59E4C2415D41A006C0B3B /* Waiittime.storyboard in Resources */,
-				34F59E442415D3B0006C0B3B /* Advertisement.storyboard in Resources */,
-				3495FF20241635E100FD6F76 /* Questionnaire.storyboard in Resources */,
 				343DD987241607F500914617 /* HR_image.xcassets in Resources */,
 				34F59E4A2415D409006C0B3B /* Timetable.storyboard in Resources */,
 				34F59E2F2415CCFA006C0B3B /* LaunchScreen.storyboard in Resources */,

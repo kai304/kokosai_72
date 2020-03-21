@@ -165,10 +165,10 @@
 		34F59E372415D232006C0B3B /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				34598012241B9E0C007D8F96 /* Map.xcassets */,
 				34F59E472415D3FE006C0B3B /* Map.storyboard */,
 				3411D4EE2418892600E69903 /* mapViewController.swift */,
 				342589192419117F00E21A4F /* konaimapViewController.swift */,
+				34598012241B9E0C007D8F96 /* Map.xcassets */,
 			);
 			path = Map;
 			sourceTree = "<group>";

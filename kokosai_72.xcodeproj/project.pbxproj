@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3411D4EF2418892600E69903 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411D4EE2418892600E69903 /* mapViewController.swift */; };
-		3425891A2419117F00E21A4F /* konaimapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342589192419117F00E21A4F /* konaimapViewController.swift */; };
+		3434535F242707610004AF32 /* konaimap_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434535E242707610004AF32 /* konaimap_ViewController.swift */; };
 		343DD9832416061200914617 /* HRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD9822416061200914617 /* HRViewController.swift */; };
 		343DD985241606D300914617 /* Custom_HR_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD984241606D300914617 /* Custom_HR_TableViewCell.swift */; };
 		343DD987241607F500914617 /* HR_image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343DD986241607F500914617 /* HR_image.xcassets */; };
@@ -31,12 +30,19 @@
 		34F59E482415D3FE006C0B3B /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E472415D3FE006C0B3B /* Map.storyboard */; };
 		34F59E4A2415D409006C0B3B /* Timetable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E492415D409006C0B3B /* Timetable.storyboard */; };
 		34F59E4C2415D41A006C0B3B /* Waiittime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E4B2415D41A006C0B3B /* Waiittime.storyboard */; };
+		34F91F9B242735B900D4EFAC /* first_floor_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91F9A242735B900D4EFAC /* first_floor_ViewController.swift */; };
+		34F91F9D242735C500D4EFAC /* first_floor_sub_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91F9C242735C500D4EFAC /* first_floor_sub_ViewController.swift */; };
+		34F91F9F242735D300D4EFAC /* second_floor_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91F9E242735D300D4EFAC /* second_floor_ViewController.swift */; };
+		34F91FA1242735E400D4EFAC /* second_floor_sub_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91FA0242735E400D4EFAC /* second_floor_sub_ViewController.swift */; };
+		34F91FA3242735F700D4EFAC /* third_floor_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91FA2242735F700D4EFAC /* third_floor_ViewController.swift */; };
+		34F91FA5242735FF00D4EFAC /* third_floor_sub_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91FA4242735FF00D4EFAC /* third_floor_sub_ViewController.swift */; };
+		34F91FA72427361300D4EFAC /* all_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91FA62427361300D4EFAC /* all_ViewController.swift */; };
+		34F91FA92427362200D4EFAC /* all_sub_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91FA82427362200D4EFAC /* all_sub_ViewController.swift */; };
 		34F93796241FAB3B00A8E526 /* Volunteer_info_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F93795241FAB3B00A8E526 /* Volunteer_info_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3411D4EE2418892600E69903 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
-		342589192419117F00E21A4F /* konaimapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = konaimapViewController.swift; sourceTree = "<group>"; };
+		3434535E242707610004AF32 /* konaimap_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = konaimap_ViewController.swift; sourceTree = "<group>"; };
 		343DD9822416061200914617 /* HRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRViewController.swift; sourceTree = "<group>"; };
 		343DD984241606D300914617 /* Custom_HR_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_HR_TableViewCell.swift; sourceTree = "<group>"; };
 		343DD986241607F500914617 /* HR_image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HR_image.xcassets; sourceTree = "<group>"; };
@@ -61,6 +67,14 @@
 		34F59E472415D3FE006C0B3B /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		34F59E492415D409006C0B3B /* Timetable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timetable.storyboard; sourceTree = "<group>"; };
 		34F59E4B2415D41A006C0B3B /* Waiittime.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Waiittime.storyboard; sourceTree = "<group>"; };
+		34F91F9A242735B900D4EFAC /* first_floor_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first_floor_ViewController.swift; sourceTree = "<group>"; };
+		34F91F9C242735C500D4EFAC /* first_floor_sub_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first_floor_sub_ViewController.swift; sourceTree = "<group>"; };
+		34F91F9E242735D300D4EFAC /* second_floor_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = second_floor_ViewController.swift; sourceTree = "<group>"; };
+		34F91FA0242735E400D4EFAC /* second_floor_sub_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = second_floor_sub_ViewController.swift; sourceTree = "<group>"; };
+		34F91FA2242735F700D4EFAC /* third_floor_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = third_floor_ViewController.swift; sourceTree = "<group>"; };
+		34F91FA4242735FF00D4EFAC /* third_floor_sub_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = third_floor_sub_ViewController.swift; sourceTree = "<group>"; };
+		34F91FA62427361300D4EFAC /* all_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_ViewController.swift; sourceTree = "<group>"; };
+		34F91FA82427362200D4EFAC /* all_sub_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_sub_ViewController.swift; sourceTree = "<group>"; };
 		34F93795241FAB3B00A8E526 /* Volunteer_info_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer_info_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,8 +180,15 @@
 			isa = PBXGroup;
 			children = (
 				34F59E472415D3FE006C0B3B /* Map.storyboard */,
-				3411D4EE2418892600E69903 /* mapViewController.swift */,
-				342589192419117F00E21A4F /* konaimapViewController.swift */,
+				3434535E242707610004AF32 /* konaimap_ViewController.swift */,
+				34F91F9A242735B900D4EFAC /* first_floor_ViewController.swift */,
+				34F91F9C242735C500D4EFAC /* first_floor_sub_ViewController.swift */,
+				34F91F9E242735D300D4EFAC /* second_floor_ViewController.swift */,
+				34F91FA0242735E400D4EFAC /* second_floor_sub_ViewController.swift */,
+				34F91FA2242735F700D4EFAC /* third_floor_ViewController.swift */,
+				34F91FA4242735FF00D4EFAC /* third_floor_sub_ViewController.swift */,
+				34F91FA62427361300D4EFAC /* all_ViewController.swift */,
+				34F91FA82427362200D4EFAC /* all_sub_ViewController.swift */,
 				34598012241B9E0C007D8F96 /* Map.xcassets */,
 			);
 			path = Map;
@@ -296,14 +317,21 @@
 			files = (
 				3492EDC0241E25B60083570A /* HR_info_ViewController.swift in Sources */,
 				34C124102414B86700216F2F /* AppDelegate.swift in Sources */,
+				34F91FA5242735FF00D4EFAC /* third_floor_sub_ViewController.swift in Sources */,
+				3434535F242707610004AF32 /* konaimap_ViewController.swift in Sources */,
+				34F91FA3242735F700D4EFAC /* third_floor_ViewController.swift in Sources */,
 				3495FF25241642C200FD6F76 /* VolunteerViewController.swift in Sources */,
+				34F91FA72427361300D4EFAC /* all_ViewController.swift in Sources */,
 				3495FF232416420E00FD6F76 /* Custom_Volunteer_TableViewCell.swift in Sources */,
+				34F91F9B242735B900D4EFAC /* first_floor_ViewController.swift in Sources */,
+				34F91FA1242735E400D4EFAC /* second_floor_sub_ViewController.swift in Sources */,
 				343DD9832416061200914617 /* HRViewController.swift in Sources */,
-				3425891A2419117F00E21A4F /* konaimapViewController.swift in Sources */,
+				34F91F9D242735C500D4EFAC /* first_floor_sub_ViewController.swift in Sources */,
 				343DD985241606D300914617 /* Custom_HR_TableViewCell.swift in Sources */,
 				345B7E92241761C800146D6D /* HomeViewController.swift in Sources */,
 				34C124122414B86700216F2F /* SceneDelegate.swift in Sources */,
-				3411D4EF2418892600E69903 /* mapViewController.swift in Sources */,
+				34F91FA92427362200D4EFAC /* all_sub_ViewController.swift in Sources */,
+				34F91F9F242735D300D4EFAC /* second_floor_ViewController.swift in Sources */,
 				34F93796241FAB3B00A8E526 /* Volunteer_info_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

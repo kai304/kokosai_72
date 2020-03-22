@@ -79,7 +79,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZTx-uu-FLz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zqu-TE-NDq"/>
+                    <navigationItem key="navigationItem" id="zqu-TE-NDq">
+                        <barButtonItem key="backBarButtonItem" title="有志団体" id="tqp-Np-Hyp"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBarField" destination="Ree-J5-nQS" id="PJW-09-hG7"/>
                         <outlet property="tableField" destination="Y9f-af-7XX" id="rAe-4J-Z3O"/>

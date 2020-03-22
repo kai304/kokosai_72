@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func Advertisement(_ sender: Any) {
-        let url = "https://goo.gl/maps/R58h4WPkR63yrG3GA"
+        let url = "https://www.google.com/"
         let safariVC = SFSafariViewController(url: NSURL(string: url)! as URL)
         present(safariVC, animated: true, completion: nil)
     }

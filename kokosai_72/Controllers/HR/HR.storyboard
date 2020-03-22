@@ -101,7 +101,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0U3-9x-HT9"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xwJ-rj-NPh"/>
+                    <navigationItem key="navigationItem" id="xwJ-rj-NPh">
+                        <barButtonItem key="backBarButtonItem" title="HR" id="vSg-Mf-bwZ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBarField" destination="oem-bm-Ygu" id="BKZ-67-Yhj"/>
                         <outlet property="segmentedswitch" destination="NxF-0Z-c7v" id="4yH-eg-Whn"/>

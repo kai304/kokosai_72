@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hrI-Yc-9HY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hrI-Yc-9HY">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="誰かにデザインしてもらう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FH-Wk-Dwd">
-                                <rect key="frame" x="20" y="428" width="374" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="誰かにデザインしてもらう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FH-Wk-Dwd">
+                                <rect key="frame" x="103" y="438" width="208" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -25,6 +24,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="7FH-Wk-Dwd" firstAttribute="centerY" secondItem="XgR-YY-Ml2" secondAttribute="centerY" id="Qks-1p-vyW"/>
+                            <constraint firstItem="7FH-Wk-Dwd" firstAttribute="centerX" secondItem="XgR-YY-Ml2" secondAttribute="centerX" id="nEK-LN-NIT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pPW-GS-CsG"/>
                     </view>
                     <navigationItem key="navigationItem" title="アクセスマップ" id="kEh-rS-OdZ"/>
@@ -32,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXq-66-OvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2106" y="741"/>
+            <point key="canvasLocation" x="2106" y="1406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rwF-oP-I64">
@@ -206,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6z-Nn-5Qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105.7971014492755" y="-209.59821428571428"/>
+            <point key="canvasLocation" x="2106" y="682"/>
         </scene>
         <!--1F-->
         <scene sceneID="zdv-xw-hop">
@@ -367,7 +370,6 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCd-hl-ONJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="414" id="CfH-bj-Q6d"/>
                                             <constraint firstAttribute="height" constant="725" id="bcd-fb-6zg"/>
                                         </constraints>
                                         <connections>
@@ -378,9 +380,11 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="hCd-hl-ONJ" secondAttribute="trailing" id="4cI-jQ-lqv"/>
+                                    <constraint firstItem="hCd-hl-ONJ" firstAttribute="width" secondItem="3p6-zx-l41" secondAttribute="width" id="R69-cl-nJG"/>
                                     <constraint firstItem="hCd-hl-ONJ" firstAttribute="leading" secondItem="3p6-zx-l41" secondAttribute="leading" id="fc3-EC-TI1"/>
                                     <constraint firstAttribute="bottom" secondItem="hCd-hl-ONJ" secondAttribute="bottom" id="gdj-UE-LLR"/>
                                     <constraint firstItem="hCd-hl-ONJ" firstAttribute="top" secondItem="3p6-zx-l41" secondAttribute="top" id="qLQ-x0-xEX"/>
+                                    <constraint firstItem="hCd-hl-ONJ" firstAttribute="height" secondItem="3p6-zx-l41" secondAttribute="height" id="rfK-aW-xN0"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -411,7 +415,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="校内全体マップ背景" translatesAutoresizingMaskIntoConstraints="NO" id="9yv-K6-DWA">
-                                <rect key="frame" x="0.0" y="117" width="414" height="491.00000000000023"/>
+                                <rect key="frame" x="0.0" y="117" width="414" height="491"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9yv-K6-DWA" secondAttribute="height" multiplier="500:593" id="jhl-tU-ah7"/>
                                 </constraints>
@@ -438,6 +442,7 @@
                                 <state key="normal" image="校舎"/>
                                 <connections>
                                     <action selector="school_building_tapped:" destination="M2j-TE-5hY" eventType="touchUpInside" id="bzd-vr-Rlf"/>
+                                    <segue destination="vNd-5b-nup" kind="showDetail" id="VUy-ab-r8u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtx-oC-9dZ" userLabel="小体育館">
@@ -485,7 +490,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXS-YD-Aka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4462.3188405797109" y="682.03125"/>
+            <point key="canvasLocation" x="3690" y="683"/>
+        </scene>
+        <!--First floor sub View Controller-->
+        <scene sceneID="6OQ-nE-wft">
+            <objects>
+                <viewController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="overFullScreen" id="vNd-5b-nup" customClass="first_floor_sub_ViewController" customModule="kokosai_72" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EBa-rf-Lat">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygH-NN-cBq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <connections>
+                                    <action selector="back:" destination="vNd-5b-nup" eventType="touchUpInside" id="KOj-fJ-8aU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRJ-mt-2jE">
+                                <rect key="frame" x="0.0" y="469" width="414" height="256"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cRJ-mt-2jE" secondAttribute="height" multiplier="809:500" id="eB6-aV-sot"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.3031470070422535" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ygH-NN-cBq" firstAttribute="top" secondItem="EBa-rf-Lat" secondAttribute="top" id="20H-Ei-C2u"/>
+                            <constraint firstItem="cRJ-mt-2jE" firstAttribute="leading" secondItem="aB0-0H-dXW" secondAttribute="leading" id="3iQ-K6-VXl"/>
+                            <constraint firstItem="cRJ-mt-2jE" firstAttribute="trailing" secondItem="aB0-0H-dXW" secondAttribute="trailing" id="bgB-gI-nTQ"/>
+                            <constraint firstItem="ygH-NN-cBq" firstAttribute="trailing" secondItem="aB0-0H-dXW" secondAttribute="trailing" id="kS7-Va-kr2"/>
+                            <constraint firstItem="aB0-0H-dXW" firstAttribute="bottom" secondItem="cRJ-mt-2jE" secondAttribute="bottom" id="l3i-OF-q60"/>
+                            <constraint firstItem="ygH-NN-cBq" firstAttribute="leading" secondItem="aB0-0H-dXW" secondAttribute="leading" id="mHy-lG-wv9"/>
+                            <constraint firstItem="ygH-NN-cBq" firstAttribute="bottom" secondItem="aB0-0H-dXW" secondAttribute="bottom" id="rka-9p-IxA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aB0-0H-dXW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="by9-Ra-rrb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlB-gY-PMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4637.68115942029" y="681.36160714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7B4-wX-3hp">
@@ -534,12 +580,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="map" catalog="system" width="64" height="56"/>
-        <image name="受付" width="412" height="885"/>
-        <image name="小体育館" width="1499" height="2208"/>
-        <image name="弓道場" width="2217" height="2208"/>
-        <image name="校内全体マップ背景" width="783" height="929"/>
-        <image name="校舎" width="3152" height="7692"/>
-        <image name="武道場" width="2254" height="2444"/>
+        <image name="map" catalog="system" width="128" height="113"/>
+        <image name="受付" width="137.33332824707031" height="295"/>
+        <image name="小体育館" width="499.66665649414062" height="736"/>
+        <image name="弓道場" width="739" height="736"/>
+        <image name="校内全体マップ背景" width="261" height="309.66665649414062"/>
+        <image name="校舎" width="1050.6666259765625" height="2564"/>
+        <image name="武道場" width="751.33331298828125" height="814.66668701171875"/>
     </resources>
 </document>

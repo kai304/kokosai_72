@@ -20,7 +20,6 @@
 		34C124102414B86700216F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C1240F2414B86700216F2F /* AppDelegate.swift */; };
 		34C124122414B86700216F2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C124112414B86700216F2F /* SceneDelegate.swift */; };
 		34C124192414B86A00216F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C124182414B86A00216F2F /* Assets.xcassets */; };
-		34DD1410241A164200A15B18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DD140F241A164200A15B18 /* MapKit.framework */; };
 		34F59E2F2415CCFA006C0B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E2E2415CCFA006C0B3B /* LaunchScreen.storyboard */; };
 		34F59E312415CD30006C0B3B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E302415CD30006C0B3B /* Home.storyboard */; };
 		34F59E3E2415D379006C0B3B /* HR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F59E3D2415D379006C0B3B /* HR.storyboard */; };
@@ -83,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34DD1410241A164200A15B18 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

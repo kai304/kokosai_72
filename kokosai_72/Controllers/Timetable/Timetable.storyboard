@@ -15,15 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="produced by Nishimura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-fM-CQO">
-                                <rect key="frame" x="118" y="438" width="178" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="produced by Nishimura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-fM-CQO">
+                                <rect key="frame" x="118" y="437.5" width="178" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bjw-fM-CQO" firstAttribute="centerY" secondItem="2JL-l0-yl1" secondAttribute="centerY" id="QJa-DK-UPr"/>
+                            <constraint firstItem="bjw-fM-CQO" firstAttribute="centerX" secondItem="2JL-l0-yl1" secondAttribute="centerX" id="xXZ-9Q-cqK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h2T-od-cLk"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="タイムテーブル" image="clock" catalog="system" id="iia-7J-EyJ"/>

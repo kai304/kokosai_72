@@ -17,6 +17,9 @@ class first_floor_sub_ViewController: UIViewController {
     }
     
 
+    @IBAction func back(_ sender: UIButton) {
+        dismiss(animated: false)
+    }
     /*
     // MARK: - Navigation
 

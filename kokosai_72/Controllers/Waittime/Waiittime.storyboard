@@ -15,15 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="produced by Nishimura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3P4-4h-SN9">
-                                <rect key="frame" x="118" y="438" width="178" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="produced by Nishimura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3P4-4h-SN9">
+                                <rect key="frame" x="118" y="437.5" width="178" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3P4-4h-SN9" firstAttribute="centerX" secondItem="9Ls-UU-Oyz" secondAttribute="centerX" id="LKT-z0-bCw"/>
+                            <constraint firstItem="3P4-4h-SN9" firstAttribute="centerY" secondItem="9Ls-UU-Oyz" secondAttribute="centerY" id="ieK-wR-wX2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="T5b-V1-zwg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="待ち時間" image="stopwatch" catalog="system" id="F1w-Th-aDU"/>
